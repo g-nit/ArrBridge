@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>IMDb → Radarr / Sonarr Settings</title>
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+<div class="wrap">
+  <h1>IMDb → Radarr / Sonarr</h1>
+  <p class="sub">Connect the extension directly to your *Arr servers. API keys are stored locally in Chrome.</p>
+  
+  <section>
+    <div class="sectionHead"><h2>Radarr</h2><span id="rstate"></span></div>
+    <!-- FIXED PLACEHOLDER -->
+    <label>URL<input id="rurl" placeholder="http://localhost:7878 or http://192.168.1.X:7878"></label>
+    <label>API Key<input id="rkey" type="password"></label>
+    <button id="rtest">Test & Load Settings</button>
+    <div class="row">
+      <label>Quality Profile<select id="rq"><option value="">Connect first</option></select></label>
+      <label>Root Folder<select id="rroot"><option value="">Connect first</option></select></label>
+    </div>
+    <label>Tag for added movies<select id="rtag"><option value="">No tag</option></select></label>
+    <p class="help">Optional. Choose the Radarr tag that matches your download-client setup. The tag is applied when the movie is added.</p>
+  </section>
+
+  <section>
+    <div class="sectionHead"><h2>Sonarr</h2><span id="sstate"></span></div>
+    <!-- FIXED PLACEHOLDER -->
+    <label>URL<input id="surl" placeholder="http://localhost:8989 or http://192.168.1.X:8989"></label>
+    <label>API Key<input id="skey" type="password"></label>
+    <button id="stest">Test & Load Settings</button>
+    <div class="row">
+      <label>Quality Profile<select id="sq"><option value="">Connect first</option></select></label>
+      <label>Root Folder<select id="sroot"><option value="">Connect first</option></select></label>
+    </div>
+    <label>Tag for added TV shows<select id="stag"><option value="">No tag</option></select></label>
+    <p class="help">Optional. Choose the Sonarr tag that matches your download-client setup. The tag is applied when the series is added.</p>
+  </section>
+
+  <section>
+    <h2>Optional: TMDB</h2>
+    <label>API Read Access Token / API Key<input id="tmdb" type="password" placeholder="Optional"></label>
+    <p class="help">TMDB is optional and is only needed for the recommendation engine.</p>
+  </section>
+
+  <button class="save" id="save">Save All Settings</button><span id="msg"></span>
+  <p class="help">Radarr/Sonarr: Settings → General → Security → API Key. The extension never sends your API key to IMDb or a third-party server.</p>
+</div>
+<script src="api.js"></script>
+<script src="options.js"></script>
+</body>
+</html>

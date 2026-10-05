@@ -1,0 +1,23 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>IMDb → Radarr / Sonarr</title><link rel="stylesheet" href="sidepanel.css"></head>
+<body>
+<header><div class="brand"><img src="icons/icon-48.png"><div><b>IMDb → Radarr / Sonarr</b><small>Discover · Check · Add</small></div></div><button id="settings" title="Settings">⚙</button></header>
+<main>
+<section id="empty" class="card"><h2>Open an IMDb title</h2><p>Browse to an IMDb movie or TV series. Then click the extension icon if this panel isn't already open.</p></section>
+<section id="titleCard" class="card hidden">
+ <!-- Dynamic Poster Container -->
+ <div id="posterWrapper" class="hidden" style="text-align: center; margin-bottom: 12px;">
+   <img id="poster" src="" alt="Media Poster" style="max-height: 180px; border-radius: 4px; box-shadow: 0 4px 10px rgba(0,0,0,0.15);">
+ </div>
+
+ <div class="eyebrow" id="kind"></div><h1 id="title"></h1><div class="typeSwitch"><span id="targetLabel">Send to Radarr</span><div class="typeButtons"><button class="typeBtn" data-type="movie">Movie → Radarr</button><button class="typeBtn" data-type="tv">TV → Sonarr</button></div></div><div id="meta"></div>
+ <div class="status" id="status">Reading IMDb…</div>
+ <div class="buttons"><button id="add" class="primary">＋ Add</button><button id="open">Open Manager</button></div>
+</section>
+<section id="details" class="card hidden"><h3>IMDb</h3><div id="detailsText"></div></section>
+<section id="discoverCard" class="card">
+ <h3>Recommendations</h3><p class="muted" id="discoverHint">Add an optional TMDB API key in Settings to enable recommendations.</p>
+ <button id="discover" class="primary wide" disabled>Find Similar Titles</button><div id="results"></div>
+</section>
+</main><footer id="footer">API keys stay in Chrome local storage.</footer>
+<script src="api.js"></script><script src="sidepanel.js"></script></body></html>

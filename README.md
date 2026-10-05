@@ -1,7 +1,4 @@
-# ArrBridge
-Chrome &amp; Firefox extension that connects IMDb with Radarr and Sonarr, with TMDB recommendations.
-
-# IMDb → Radarr / Sonarr Chrome Extension
+# ArrBridge: IMDb → Radarr / Sonarr Chrome Extension
 
 A lightweight, local-first Chrome extension that integrates directly into your browser's **Side Panel** to seamlessly bridge the gap between browsing **IMDb** and managing your media libraries in **Radarr** and **Sonarr**.
 
