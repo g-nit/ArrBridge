@@ -3,6 +3,9 @@
 A lightweight, local-first Chrome extension that integrates directly into your browser's **Side Panel** to seamlessly bridge the gap between browsing **IMDb** and managing your media libraries in **Radarr** and **Sonarr**.
 
 ---
+## 🎥 Demo
+<video src=https://github.com/user-attachments/assets/2ed00bb3-edc6-47c5-b067-70bf0fd1e18f width="400" controls></video>
+
 
 ## 🚀 Key Features
 
