@@ -23,7 +23,7 @@ A lightweight, local-first Chrome extension that integrates directly into your b
 
 Follow these steps to load the unpacked extension in developer mode:
 
-1. **Download and Extract:** [⬇️ Download Latest Release](https://github.com/g-nit/ArrBridge/releases/latest) the repository source file and extract the `.zip` archive to a dedicated folder on your local machine.
+1. **Download and Extract:** [⬇️ Download Latest Release](https://github.com/g-nit/ArrBridge/releases/latest) and extract the `.zip` archive to a dedicated folder on your local machine.
 2. **Open Extensions Dashboard:** Open a new browser window and navigate to `chrome://extensions/`.
 3. **Enable Developer Tools:** Toggle the **Developer mode** switch in the top-right corner of the dashboard to `ON`.
 4. **Load the Unpacked Folder:** Click the **Load unpacked** button in the top-left menu.
